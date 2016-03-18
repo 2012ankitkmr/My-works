@@ -86,6 +86,7 @@ typedef int elem_t;
 typedef vector<int> vec;
 typedef vector<vec> vv;
 typedef pair<int,int> ii;
+//After test 
 // directions
 const int fx[4][2] = {{0,1}, {0,-1}, {1,0}, {-1,0}};
 const int fxx[8][2] = {{0,1}, {0,-1}, {1,0}, {-1,0}, {1,1}, {1,-1}, {-1,1}, {-1,-1}};
