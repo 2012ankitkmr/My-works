@@ -25,5 +25,5 @@ $json_data=array("login_data"=>$result_as_array);
 
 
 echo json_encode($json_data);
-mysqli_close($con);
+mysqli_close($con_link);
 ?>

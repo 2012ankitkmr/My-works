@@ -1,0 +1,18 @@
+I've got a solution that might help...(only for error code 70)
+
+1. Open the log file in notepad++ for the error the system has created normally named as [open_gapps_log.txt ].
+
+2.Search for the [Additional Space Required (KB) | 213028(size may vary) ]. let the size be req_size.
+3.Now there will be a table given below pen down the apps you wouldn't need(u have to even if you need ;) ).
+
+4.Make sure that the net size of the apps you wrote must be greater than req_size;
+
+5.Open the compressed gapps file. open GApps folder and delete all the files from the archive that you wrote .
+
+6.Now open installer.DATA in notepad++.
+
+7. Under the tag [GApps List (Applications user can Select/Deselect)], Search for the type of Gapps you downloaded[eg. pico_gapps, micro_gapps, mini_gapps,full_gapps ], mine was full_gapps.
+
+8. Now delete the names that you wrote under the [your gapps file name]_list=".
+
+9. Save the file and is now ready to be installed.

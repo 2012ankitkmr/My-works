@@ -1,0 +1,4 @@
+<<Remove the lines 1 and 2 and save the file with .bat extension to open the command prompt in below directory(Modify the location in your case)>>
+
+@ECHO OFF
+cmd.exe /K "cd C:\Users\Ankit\AppData\Local\Android\sdk\platform-tools && C:"
