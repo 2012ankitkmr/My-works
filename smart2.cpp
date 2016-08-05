@@ -39,7 +39,9 @@ func_count = 0;
 	string inputline;
    
     char *pch;
-    
+	char *str;
+	
+	    
 	while(1)
 	{
 		 vector<string>linetoken;
@@ -48,7 +50,7 @@ func_count = 0;
 		if(inputline.compare("")==0)
 		break;
 
-	char *str;
+
 	str = strdup(inputline.c_str());
 
     pch = strtok (str," ");
@@ -112,10 +114,29 @@ func_count = 0;
     
 }
 
+
 for(int i = 0 ; i < main_args.size() ; i++ )
 {
 	
-	
+		vector<string>linetoken1;
+		str = strdup(main_args[i].c_str());
+        pch = strtok (str," ");
+         while (pch != NULL)
+	     {
+         string s(pch);
+         linetoken1.push_back(s);
+         printf ("%s\n",pch);
+         pch = strtok (NULL, " ");
+          }
+          
+          
+          string arg = linetoken1[linetoken.size()-1];
+          stack<string>funcstack;
+          for(int i = 1;i<linetoken1.size()-1;i++)
+          {
+          	funcstack.push(linetoken1[i]);
+          }
+
 	
 	
 	
