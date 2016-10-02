@@ -1,6 +1,6 @@
 Open Source Personal Assistant Proejct 
 
-Jarvis currently supports : 
+Garud currently supports : 
   - weather 
   - squaring numbers
   
