@@ -1,0 +1,71 @@
+#include<stdio.h>
+int main()
+{
+  long unsigned int t,n,p=0,i,j,k,l,b,count;
+  scanf("%lu",&t);
+  int d[100000];
+  while(p<t)
+  {
+      l=0,b=0;
+       k=0;
+      scanf("%lu",&n);
+      count=0;
+   for(i=0;i<n;i++)
+    scanf("%d",&d[i]);
+    if(d[0]<0)
+        ++count;
+    for(i=0;i<n;i++)
+{
+      for(j=i+1;j<n;j++)
+    {
+          if(d[i]>=0)
+      {
+       if(d[j]<0)
+       {
+        k=j-i;
+       if(d[i]<=(-1)*d[j])
+       {
+       b=k*d[i];
+       d[j]+=d[i];
+        d[i]=0;
+       }
+       else
+       {
+        b=k*(-1)*d[j];
+        d[i]+=d[j];
+        d[j]=0;
+       }
+       l=l+b;
+       }
+       else;
+    }
+      else
+      {
+       if(d[j]>=0)
+       {
+       k=j-i;
+       if((-1)*d[i]>=d[j])
+       {
+        b=k*d[j];
+        d[i]+=d[j];
+        if(count==1)
+        d[j]=0;
+       }
+       else
+       {
+       b=k*d[i]*(-1);
+       d[j]+=d[i];
+       d[i]=0;
+       }
+       l=l+b;
+
+    }
+        }
+}
+}
+printf("%lu\n",l);
+  p++;
+  }
+return 0;
+
+}

@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+#define lli long long int
+ 
+using namespace std;
+ 
+int main()
+{
+	long double i,k,s,a,b,an;
+	long double ans = 0.0;
+scanf("%lf%lf%lf%lf%lf",&i,&k,&s,&a,&b);
+ 
+	lli t = (k-i);
+	if(t&1)
+	{
+		a = sqrt(2)*(a+b) - sqrt(6)*(a-b);
+		b = sqrt(2)*(a-b) + sqrt(6)*(a+b);
+	if(i>k)
+	{
+			t = t+1;
+	}
+	}
+	an = 2*t-s;
+	ans = pow(2.0,an)*(a+b);
+	cout<<ans<<endl;
+return 0;
+}
