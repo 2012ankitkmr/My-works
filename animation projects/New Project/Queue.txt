@@ -1,0 +1,5 @@
+Track a text 
+Track Onix
+Motion Onix
+Create a model of pokestop
+Create animation with that model
